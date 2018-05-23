@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        padding: 10px;
+        width: 1400px;
+        margin: auto;
+        background-color: #eee;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    svg#renderer {
+        width: 1250px;
+        height: 750px;
+        background-color: #fff;
+        border: 1px solid gray;
+    }
+
+    .title {
+        padding: 20px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .description {
+        padding: 0 20px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Parallel Coordinate</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="title">
+    박찬희(201521076) Parallel Coordinate
+</div>
+<div class="description">
+    <p>회색 영역을 클릭해 필터를 만드세요.</p>
+    <p>필터를 클릭한 체로 이동할 수 있습니다.</p>
+    <p>필터 위아래의 핸들러를 이용해 필터의 크기를 변경할 수 있습니다.</p>
+    <p>필터를 짧게 클릭하여, 필터를 제거 할 수 있습니다.</p>
+</div>
+<svg id="renderer"></svg>
+<script src="scripts/filter_201521076.js"></script>
+<script src="scripts/constants_201521076.js"></script>
+<script src="scripts/util_201521076.js"></script>
+<script src="scripts/parallel_201521076.js"></script>
+</body>
+</html>
